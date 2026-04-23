@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Me</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<style>
+	.sub-menu{
+		border: 1px solid black;
+		border-collapse: collapse;
+		height: 10vh;
+		width: 100%;
+		table-layout: fixed;
+		background: rgba(150, 150, 200 , 1.0);
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		position: fixed;
+		top: 0;
+		text-align: center;
+
+	}
+	.sub-menu a {
+		text-decoration: none;
+	 color: white;
+	 transition: font-size 1.5s;
+	}
+	.table-row td {
+		border: 1px solid black;
+	}
+	.sections div{
+		min-height: 80vh;
+
+	}
+	.sections div:nth-child(1){
+		background-color: lightblue;
+	}
+	.sections div:nth-child(2){
+		background-color: pink;
+	}
+	.sections div:nth-child(3){
+		background-color: cyan;
+	}
+	.sections div:nth-child(4){
+		background-color: green;
+	}
+	.sub-menu {
+		position: fixed;
+		margin-top: 10vh;
+		z-index: 999;
+	}
+	.sections{
+		margin-top: 20vh;
+		padding: 0;
+	}
+	.about{
+		display: flex;
+		justify-content: space-between;
+		padding: 60px 10%;
+		gap: 10%;
+	}
+	.about-text{
+		flex: 1;
+	}
+	.about-image{
+		flex: 1;
+	}
+	.about-image img {
+		height: 20%;
+		border-radius: 30%;
+	}
+	#latest, #birth, #educ, #ski {
+		scroll-margin-top: 20vh;
+	}
+	body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            width: 14%;
+            height: 60px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #ff1234;
+            color: white;
+        }
+
+        .birthday {
+            background-color: cyan;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .birthday:hover {
+            background-color: gold;
+            color: black;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .note {
+            font-size: 12px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .note:hover {
+            background-color: #FF1234;
+            color: blue;
+        }
+</style>
+<body>
+	<header>
+		<ul class="main-nav">
+			<li><a href="index.html">MY PORTFOLIO</a></li>
+			<li><a href="index.html"><img src="pogot.jpeg"></a></li>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="aboutme.html">ABOUT ME</a></li>
+			<li><a href="contacs.html">CONTACTS</a></li>
+			<li><a href="profile.html">PROFILE</a></li>
+		</ul>
+	</header>
+<table class="sub-menu">
+	<tr class="table-row">
+		<td> <a href="#latest">Latest Updates</a> </td>
+		<td> <a href="#birth">Birthday</a> </td>
+		<td> <a href="#educ">Educational Background</a> </td>
+		<td> <a href="#ski">Skills</a> </td>
+	</tr>
+</table>
+<div class="sections">
+	<div id="latest" class="about">
+		<section class="about-text">
+			<h1>So, Who am I</h1>
+			<p> Hello I am Rezzia Mae Calip. "Nobody is perfect. I just don't believe in perfection.But I do believe in saying this is who I am and look at me not being perfect I'm proud of that"</p>
+		</section>
+		<section class="about-image">
+			<img src="shameh.jpg" alt="this is it"> 
+		</section>
+	</div>
+	<div id="birth">Birthday
+		<h2>June 2006 - My Birthday Month </h2>
+<br>
+<table>
+    <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+
+    <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td class="birthday">
+             14
+             <span class="note">It's my Birthday</span>
+         </td>
+    </tr>
+
+    <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+    </tr>
+
+    <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+    </tr>
+
+    <tr>
+        <td>29</td>
+        <td>30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+	 </div>
+	 <div id="educ">
+        <div id="carouselExample" class="carousel slide">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <a href="elem.html"><img src="schoolelem.jpg" class="d-block w-100" alt="..."></a>
+    <h5>BALASI ELEMENTARY SCHOOL</h5>
+    <p>Balasi, Flora, Apayao</p>
+    </div>
+    <div class="carousel-item">
+     <a href="highschool.html"> <img src="highschool.jpg" class="d-block w-100" alt="..."></a>
+      <h5>FLORA NATIONAL HIGH SCHOOL</h5>
+      <p>Pob. East, Flora, Apayao</p>
+      </div>
+      <div class="carousel-item">
+      <a href="college.html"><img src="collegeschool.jpg" class="d-block w-100" alt="..."></a>
+      <h5>APAYAO,STATE,COLLEGE</h5>
+      <p>San Sidro Sur,Luna,Apayao</p>
+    </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+  <span class="visually-hidden">Previous</span>
+  </button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="vissually-hidden">Next</span>
+</button>
+</div>
+    </div> 
+	<<div id="ski">Skills
+		<div class="container mt-5">
+    <h3 class="text-center mb-4 fw-bold">My Skills</h3>
+    
+    <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="Copy Singing.jpeg" class="card-img-top p-3">
+                <div class="card-body text-center">
+                    <p class="card-text fw-bold">Singing</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="Copy Friends.jpeg" class="card-img-top p-4">
+                <div class="card-body text-center">
+                    <p class="card-text fw-bold">Friends</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="Copy volleyball.jpeg" class="card-img-top p-4" >
+                <div class="card-body text-center">
+                    <p class="card-text fw-bold">Volleyball</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+</div>
+</body>
+</html>
